@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Player</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./IMG/music (1).png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="music-box">
+      <div class="top">
+        <div class="playlist"><img src="./IMG/playlist.png" class="icon" /></div>
+        <h4>Media Player</h4>
+        <div class="setting"><img src="./IMG/setting.png" class="icon" /></div>
+      </div>
+      <div class="mid">
+        <div class="music">
+          <img src="./IMG/Music.jpg" />
+        </div>
+        <div class="song-title">
+            <div class="title">Just Relax</div>
+            <div class="singer">Jhon Doe</div>
+        </div>
+        <audio src="./IMG/just-relax-11157.mp3" id="music" ></audio>
+      </div>
+      <div class="bottom">
+        <input type="range" id="progress"/>
+        <div class="music-control">
+          <img src="./IMG/back.png" class="icon" />
+          <i class="fa-solid fa-play" id="controls" onclick="playpause()"></i>
+          <img src="./IMG/next.png" class="icon" />
+        </div>
+      </div>
+    </div>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
